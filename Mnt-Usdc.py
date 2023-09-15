@@ -17,7 +17,7 @@ if response.status_code == 200:
     if match:
         value_with_dollar = match.group(1)
         value = float(value_with_dollar.replace('$', ''))
-        result = 3* value
+        result = 0.7 * value
         wei_value = int(result * 10 ** 6 * 0.1)
 
 rpc_eth = 'https://mantle-mainnet.public.blastapi.io'
